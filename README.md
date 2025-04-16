@@ -1,1 +1,1 @@
-# -MediBeng-Whisper-Tiny
+# MediBeng-Whisper-Tiny
