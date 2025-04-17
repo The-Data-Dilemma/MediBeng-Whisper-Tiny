@@ -32,7 +32,9 @@ This solution is designed to transcribe and **translate** **code-switched Bengal
 - **Fine-tuned for**: Translation task (code-mixed Bengali-English → English)
 - **Domain**: Clinical/Medical
 - **Language support**: Code-mixed Bengali-English (input), English (output)
-- **Fine-tuning approach**: A very simple and easy-to-use fine-tuning script has been created to simplify the fine-tuning process for the translation task.
+- **Fine-tuning approach**: A very simple and easy-to-use fine-tuning script has been created to simplify the fine-tuning process for the translation task, ensuring efficient model adaptation.
+- **Open-source**: Both the model and the dataset (**MediBeng**) are open-source, and the entire process, including fine-tuning, is available for public use and contribution.
+
 
 
 ## Dataset and Model available on Hugging Face <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="20" height="20" />
