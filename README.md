@@ -182,6 +182,12 @@ The model testing script is available in the `tests` directory.
 - **Biases**: The training data may contain biases based on the demographics of the speakers, such as gender, age, and accent.
 - **Misuse**: Like any ASR system, this model could be misused to create fake transcripts of audio recordings, potentially leading to privacy and security concerns.
 - **Fairness**: Ensure the model is used in contexts where fairness and ethical considerations are taken into account, particularly in clinical environments.
+### Blog Post
+
+I’ve written a detailed blog post on Medium about **MediBeng Whisper-Tiny** and how it translates code-switched Bengali-English speech in healthcare. In this post, I discuss the dataset creation, model fine-tuning, and how this can improve healthcare transcription.
+
+Read the full article here: [MediBeng Whisper-Tiny: Translating Code-Switched Bengali-English Speech for Healthcare](https://medium.com/@promilaghoshmonty/medibeng-whisper-tiny-translating-code-switched-bengali-english-speech-for-healthcare-from-f7abb253b381)
+
 
 ### License
 
