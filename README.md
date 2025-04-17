@@ -11,7 +11,7 @@
 
 
 
-# Medibeng Whisper Tiny: Code-Switched Bengali-English Speech Translation for Clinical Settings
+# MediBeng Whisper Tiny: Code-Switched Bengali-English Speech Translation for Clinical Settings
 
 ## Overview
 
