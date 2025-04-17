@@ -1,7 +1,16 @@
 
-# ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg) ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+<p align="right">
+ <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License" />&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/Status-Fine%20Tuned-brightgreen" alt="Model Status" />&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/Base%20Model-OpenAI%20Whisper%20Tiny-blue" alt="Base Model" />
 
-# MediBeng Whisper Tiny: Translating Code-Switched Bengali-English Speech to English in Clinical Settings
+</p>
+
+ <div align="center">
+  <a href="https://huggingface.co/pr0mila-gh0sh/MediBeng-Whisper-Tiny"><img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Model link on Hugging Face" width="100" height="100"/></a>
+</div>
+
+# Medibeng Whisper Tiny: Code-Switched Bengali-English Speech Translation for Clinical Settings
 
 ## Overview
 
@@ -18,9 +27,7 @@ The solution is designed to transcribe and translate **code-switched Bengali-Eng
 - Domain: Clinical/Medical
 - Language support: code-mixed Bengali-English (input), English (output)
 
- <div align="center">
-  <a href="https://huggingface.co/pr0mila-gh0sh/MediBeng-Whisper-Tiny"><img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Model link on Hugging Face" width="100" height="100"/></a>
-</div>
+
 
 ## Dataset Information
 
@@ -80,7 +87,9 @@ The model's performance improved as the training progressed, showing consistent 
 - **Eval Loss**: The evaluation loss decreases significantly, showing that the model is generalizing well to unseen data.
 - **Eval WER**: The Word Error Rate (WER) decreases over the epochs, indicating the model is getting better at transcribing code-switched Bengali-English speech.
 
-## Clone the Repository
+## The Fine-Tune Process is Below 🛠️
+
+### Clone the Repository
 
 Open a terminal on your machine and use the following command to clone the repository:
 
@@ -90,9 +99,9 @@ cd MediBeng-Whisper-Tiny
 ```
 
 
-## Setup Instructions
+### Setup Instructions
 
-### Create a Conda Environment and Install Required Packages
+#### Create a Conda Environment and Install Required Packages
 
 To set up the environment, you can use one of the following commands:
 
@@ -108,7 +117,7 @@ Or, install the packages
 ```bash
 pip install torch transformers datasets librosa evaluate soundfile tensorboard jiwer accelerate
 ```
-## Configuration Setup
+### Configuration Setup
 
 The configuration parameters for the model, dataset, and repository are defined in the `config/config.py` file. For translated transcription, make sure to update the `LANGUAGE` and `TASK` variables as follows:
 
@@ -117,36 +126,63 @@ MODEL_NAME = "openai/whisper-tiny"
 LANGUAGE = "English"
 TASK = "translate"
 ```
-## Data Loading
+### Data Loading
 
 The dataset is loaded and stored in the `data` folder, which is created by running the data processing code in the `data_loader.py` file. For training and testing, **20%** of the data from the dataset is used for both training and testing. This configuration is defined and controlled in the `data_loader.py` file.
 
-## Training and Upload Model
+### Training and Upload Model
 
 To start training the model, run the following command:
 
 ```bash
 python main.py
 ```
-## Limitations
+### Limitations
 - **Accents**: The model may struggle with very strong regional accents or non-native speakers of Bengali and English.
 - **Specialized Terms**: The model may not perform well with highly specialized medical terms or out-of-domain speech.
 - **Multilingual Support**: While the model is designed for Bengali and English, other languages are not supported.
 
-## Ethical Considerations
+### Ethical Considerations
 - **Biases**: The training data may contain biases based on the demographics of the speakers, such as gender, age, and accent.
 - **Misuse**: Like any ASR system, this model could be misused to create fake transcripts of audio recordings, potentially leading to privacy and security concerns.
 - **Fairness**: Ensure the model is used in contexts where fairness and ethical considerations are taken into account, particularly in clinical environments.
 
-## License
+### License
 
-This model is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file for more details.
+This model is based on the **Whisper-Tiny** model by [OpenAI](https://huggingface.co/openai/whisper-tiny) available on [Hugging Face](https://huggingface.co). The original model is licensed under the **Apache-2.0** license.
 
-### Terms and Conditions
+This fine-tuned version, **Medibeng Whisper-Tiny**, was trained on a **code-switched Bengali-English** dataset for use in clinical settings and is also shared under the **Apache-2.0** license.
+See the [LICENSE](LICENSE) file for more details.
+
+#### Terms and Conditions
 - You are free to use, modify, and distribute the model, as long as you comply with the conditions of the Apache License 2.0.
 - You must provide attribution, including a reference to this model card and the repository when using or distributing the model.
 - You cannot use the model for unlawful purposes or in any manner that infringes on the rights of others.
 
 For more details, please review the full [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
+## Citation for Research Use
+
+If you use **Medibeng Whisper-Tiny** or the **MediBeng** dataset for your research or project, please cite the following:
+
+#### For **Medibeng Whisper-Tiny** Model (Fine-Tuned Model):
+
+```bibtex
+@misc{pr0mila2025medibengwhisper,
+  author = {Promila Ghosh},
+  title = {Medibeng Whisper-Tiny: Code-Switched Bengali-English Speech Translation for Clinical Settings},
+  year = {2025},
+  howpublished = {\url{https://huggingface.co/pr0mila-gh0sh/MediBeng-Whisper-Tiny}},
+}
+```
+#### For MediBeng Dataset:
+```bibtex
+@dataset{pr0mila2025mediBengdataset,
+  author = {Promila Ghosh},
+  title = {MediBeng: Code-Switched Bengali-English Dataset for Clinical Transcription and Translation},
+  year = {2025},
+  howpublished = {\url{https://huggingface.co/datasets/pr0mila-gh0sh/MediBeng}},
+}
+
 
 
