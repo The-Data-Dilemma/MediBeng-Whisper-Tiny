@@ -1,14 +1,15 @@
 
 <p align="right">
- <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License" />&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/Status-Fine%20Tuned-brightgreen" alt="Model Status" />&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/Base%20Model-OpenAI%20Whisper%20Tiny-blue" alt="Base Model" />
-
+  <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License" />
+  <img src="https://img.shields.io/badge/Status-Fine%20Tuned-brightgreen" alt="Model Status" />
+  <img src="https://img.shields.io/badge/Base%20Model-OpenAI%20Whisper%20Tiny-blue" alt="Base Model" />
+  <a href="https://huggingface.co/pr0mila-gh0sh/MediBeng-Whisper-Tiny">
+    <img src="https://img.shields.io/badge/Hugging%20Face-Model-blue" alt="Hugging Face Model" />
+  </a>
 </p>
 
- <div align="center">
-  <a href="https://huggingface.co/pr0mila-gh0sh/MediBeng-Whisper-Tiny"><img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Model link on Hugging Face" width="100" height="100"/></a>
-</div>
+
+
 
 # Medibeng Whisper Tiny: Code-Switched Bengali-English Speech Translation for Clinical Settings
 
@@ -27,24 +28,20 @@ The solution is designed to transcribe and translate **code-switched Bengali-Eng
 - Domain: Clinical/Medical
 - Language support: code-mixed Bengali-English (input), English (output)
 
-
-
-## Dataset Information
+## Dataset and Model on Hugging Face <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="20" height="20" />
 
 📂 **Dataset**: Check out the **MediBeng** (30% subset) dataset used to fine-tune this model! This dataset includes synthetic code-switched clinical conversations in Bengali and English. It is designed to help train models for tasks like **speech recognition (ASR)**, **text-to-speech (TTS)**, and **machine translation**, focusing on bilingual code-switching in healthcare settings.
 
 
-🔗 **Dataset Link**: [MediBeng Dataset](https://huggingface.co/datasets/pr0mila-gh0sh/MediBeng)
+🔗 **Full Dataset Link**: [MediBeng Dataset](https://huggingface.co/datasets/pr0mila-gh0sh/MediBeng)
 
 
 
 🔧 **Dataset Parquet File Creation**: Here's how I loaded the dataset to Hugging Face!  
 🔗 **Repo Link for Parquet-to-HuggingFace Process**: [Parquet-to-HuggingFace Process](https://github.com/pr0mila/ParquetToHuggingFace)
 
-## Model on Hugging Face
-
 You can access the fine-tuned model on Hugging Face using the link below:  
-🔗 [Model Link on Hugging Face](https://huggingface.co/pr0mila-gh0sh/MediBeng-Whisper-Tiny)
+🔗 **Model Link**: [MediBeng-Whisper-Tiny](https://huggingface.co/pr0mila-gh0sh/MediBeng-Whisper-Tiny)
 
 ## Model Test Example Results
 
