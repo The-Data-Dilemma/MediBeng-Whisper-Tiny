@@ -15,20 +15,27 @@
 
 ## Overview
 
-For many **genAI solutions** in the **clinical domain**, doctor-patient transcription is a crucial task. It is especially challenging in clinical settings when the language is **code-switched**, i.e., when both **Bengali and English** are mixed in the conversation. This is common in multilingual environments, particularly in healthcare.
+For many **genAI solutions** in the **clinical domain**, doctor-patient transcription is a key task. It becomes especially difficult in clinical settings when the language is **code-switched**, meaning multiple languages are mixed during conversation. This is common in multilingual environments, particularly in healthcare.
 
-To solve this problem, I have developed a model that **translates** the **code-switched transcription** into one language, making it easier for further processes such as analysis, record-keeping, or integrating with other AI models.
+To address this challenge, we fine-tuned the Whisper Tiny model to **translate** **code-switched Bengali and English speech** into one language, making it easier for tasks like analysis, record-keeping, or integrating with other AI models. After fine-tuning, we obtained the  [MediBeng Whisper Tiny](https://huggingface.co/pr0mila-gh0sh/MediBeng-Whisper-Tiny) model. 
 
-The solution is designed to transcribe and translate **code-switched Bengali-English** conversations in clinical settings, making it easier for practitioners to process the information and use it for patient records or decision-making.
 
-## Model Details
+The dataset, [MediBeng](https://huggingface.co/datasets/pr0mila-gh0sh/MediBeng), has been created using **synthetic data generation** to simulate code-switched conversations, allowing for more robust training of the model. This dataset was used in the fine-tuning process.
 
-- Base model: openai/whisper-tiny
-- Fine-tuned for: translate task (code-mixed Bengali-English → English)
-- Domain: Clinical/Medical
-- Language support: code-mixed Bengali-English (input), English (output)
+This solution is designed to transcribe and **translate** **code-switched Bengali-English** conversations **into English** in clinical settings, helping practitioners process the information more effectively and use it for patient records or decision-making. We achieved great results after fine-tuning the model.
 
-## Dataset and Model on Hugging Face <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="20" height="20" />
+
+
+## Model Key Features
+
+- **Base model**: openai/whisper-tiny
+- **Fine-tuned for**: Translation task (code-mixed Bengali-English → English)
+- **Domain**: Clinical/Medical
+- **Language support**: Code-mixed Bengali-English (input), English (output)
+- **Fine-tuning approach**: A very simple and easy-to-use fine-tuning script has been created to simplify the fine-tuning process for the translation task.
+
+
+## Dataset and Model available on Hugging Face <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="20" height="20" />
 
 📂 **Dataset**: Check out the **MediBeng** (30% subset) dataset used to fine-tune this model! This dataset includes synthetic code-switched clinical conversations in Bengali and English. It is designed to help train models for tasks like **speech recognition (ASR)**, **text-to-speech (TTS)**, and **machine translation**, focusing on bilingual code-switching in healthcare settings.
 
@@ -129,7 +136,7 @@ The dataset is loaded and stored in the `data` folder, which is created by runni
 
 ### Training and Upload Model
 
-To start training the model, run the following command:
+A simple script has been created to easily run the fine-tuning for the translation task. To start training the model, run the following command:
 
 ```bash
 python main.py
