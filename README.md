@@ -134,6 +134,35 @@ To start training the model, run the following command:
 ```bash
 python main.py
 ```
+#### Uploading the Model to Hugging Face
+
+After setting up your Hugging Face token, follow these steps to upload your model to Hugging Face:
+
+1. Set your Hugging Face token as an environment variable:
+   ```bash
+   export HF_TOKEN="your_hugging_face_token"
+   ```
+   Replace "your_hugging_face_token" with the actual token value.
+2. Set the `OUTPUT_DIR` and `REPO_ID` in your `config/config.py` file:
+
+  - `OUTPUT_DIR`: Directory where your model is saved.
+  - `REPO_ID`: Your Hugging Face repository ID (the name of the repository where the model will be uploaded).
+  
+  Example:
+  
+  ```python
+  OUTPUT_DIR = "path/to/your/model"
+  REPO_ID = "your_huggingface_repo_id"
+  ```
+3. Run the following command to upload your model to Hugging Face:
+
+```bash
+python upload_model/upload_model.py
+```
+
+
+
+
 ### Limitations
 - **Accents**: The model may struggle with very strong regional accents or non-native speakers of Bengali and English.
 - **Specialized Terms**: The model may not perform well with highly specialized medical terms or out-of-domain speech.
