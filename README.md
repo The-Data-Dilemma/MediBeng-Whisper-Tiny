@@ -159,6 +159,7 @@ After setting up your Hugging Face token, follow these steps to upload your mode
 ```bash
 python upload_model/upload_model.py
 ```
+The model testing script is available in the `tests` directory.
 
 
 
