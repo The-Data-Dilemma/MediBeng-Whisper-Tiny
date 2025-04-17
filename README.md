@@ -207,12 +207,12 @@ For more details, please review the full [Apache License 2.0](https://www.apache
 
 If you use **Medibeng Whisper-Tiny** or the **MediBeng** dataset for your research or project, please cite the following:
 
-#### For **Medibeng Whisper-Tiny** Model (Fine-Tuned Model):
+#### For **MediBeng Whisper Tiny** Model (Fine-Tuned Model):
 
 ```bibtex
 @misc{pr0mila2025medibengwhisper,
   author = {Promila Ghosh},
-  title = {Medibeng Whisper-Tiny: Code-Switched Bengali-English Speech Translation for Clinical Settings},
+  title = {MediBeng Whisper Tiny: Code-Switched Bengali-English Speech Translation for Clinical Settings},
   year = {2025},
   howpublished = {\url{https://huggingface.co/pr0mila-gh0sh/MediBeng-Whisper-Tiny}},
 }
