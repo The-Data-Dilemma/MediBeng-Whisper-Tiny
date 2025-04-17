@@ -34,10 +34,10 @@ REPO_ID = "username/MediBeng"
 # Test audio files to test the model 
 
 TEST_AUDIO_FILES = [
-    "/Users/promilaghosh/VS-Code-Projects/Medibeng_Whisper_Tiny_copy/tests/data/Female-Bengali-English-2045.wav",
-    "/Users/promilaghosh/VS-Code-Projects/Medibeng_Whisper_Tiny_copy/tests/data/Female-Bengali-English-2065.wav",
-    "/Users/promilaghosh/VS-Code-Projects/Medibeng_Whisper_Tiny_copy/tests/data/Female-Bengali-English-2072.wav",
-    "/Users/promilaghosh/VS-Code-Projects/Medibeng_Whisper_Tiny_copy/tests/data/Male-Bengali-English-1959.wav",
-    "/Users/promilaghosh/VS-Code-Projects/Medibeng_Whisper_Tiny_copy/tests/data/Male-Bengali-English-2372.wav",
-    "/Users/promilaghosh/VS-Code-Projects/Medibeng_Whisper_Tiny_copy/tests/data/Male-Bengali-English-2338.wav"
+    "data/Female-Bengali-English-2045.wav",
+    "data/Female-Bengali-English-2065.wav",
+    "data/Female-Bengali-English-2072.wav",
+    "data/Male-Bengali-English-1959.wav",
+    "data/Male-Bengali-English-2372.wav",
+    "data/Male-Bengali-English-2338.wav"
 ]
