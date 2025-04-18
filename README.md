@@ -39,7 +39,7 @@ This solution is designed to transcribe and **translate** **code-switched Bengal
 
 ## Dataset and Model available on Hugging Face <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="20" height="20" />
 
-📂 **Dataset**: Check out the **MediBeng** (30% subset) dataset used to fine-tune this model! This dataset includes synthetic code-switched clinical conversations in Bengali and English. It is designed to help train models for tasks like **speech recognition (ASR)**, **text-to-speech (TTS)**, and **machine translation**, focusing on bilingual code-switching in healthcare settings.
+📂 **Dataset**: Check out the **MediBeng** (20% subset) dataset used to fine-tune this model! This dataset includes synthetic code-switched clinical conversations in Bengali and English. It is designed to help train models for tasks like **speech recognition (ASR)**, **text-to-speech (TTS)**, and **machine translation**, focusing on bilingual code-switching in healthcare settings.
 
 
 🔗 **Full Dataset Link**: [MediBeng Dataset](https://huggingface.co/datasets/pr0mila-gh0sh/MediBeng)
