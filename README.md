@@ -219,11 +219,13 @@ If you use **Medibeng Whisper-Tiny** or the **MediBeng** dataset for your resear
 ```
 #### For MediBeng Dataset:
 ```bibtex
-@dataset{pr0mila2025mediBengdataset,
-  author = {Promila Ghosh},
-  title = {MediBeng: Code-Switched Bengali-English Dataset for Clinical Transcription and Translation},
-  year = {2025},
-  howpublished = {\url{https://huggingface.co/datasets/pr0mila-gh0sh/MediBeng}},
+@misc{promila_ghosh_2025,
+	author       = { Promila Ghosh },
+	title        = { MediBeng (Revision b05b594) },
+	year         = 2025,
+	url          = { https://huggingface.co/datasets/pr0mila-gh0sh/MediBeng },
+	doi          = { 10.57967/hf/5187 },
+	publisher    = { Hugging Face }
 }
 
 
