@@ -9,6 +9,9 @@
 </p>
 
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/pr0mila/MediBeng-Whisper-Tiny/main/medbeng.png" width="400"/>
+</p>
 
 
 # MediBeng Whisper Tiny: Code-Switched Bengali-English Speech Translation for Clinical Settings
