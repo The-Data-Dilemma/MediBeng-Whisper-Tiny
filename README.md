@@ -22,6 +22,20 @@
 
 # MediBeng Whisper Tiny: Code-Switched Bengali-English Speech Translation for Clinical Settings
 
+## Table of Contents 📑
+- [Overview](#overview)
+- [Model Key Features](#model-key-features)
+- [Dataset and Model available on Hugging Face](#dataset-and-model-available-on-hugging-face)
+- [Model Test Example Results](#model-test-example-results)
+- [Evaluation Results](#evaluation-results)
+- [The Fine-Tune Process is Belows](#the-fine-tune-process-is-below)
+- [Limitations](#limitations)
+- [Known Issue in Current Release](#known-issue-in-current-release)
+- [Ethical Considerations](#ethical-considerations)
+- [Blog Post](#blog-post)
+- [License](#license)
+- [Citation for Research Use](#citation-for-research-use)
+
 ## Overview
 
 For many **genAI solutions** in the **clinical domain**, doctor-patient transcription is a key task. It becomes especially difficult in clinical settings when the language is **code-switched**, meaning multiple languages are mixed during conversation. This is common in multilingual environments, particularly in healthcare.
@@ -46,7 +60,7 @@ This solution is designed to transcribe and **translate** **code-switched Bengal
 
 
 
-## Dataset and Model available on Hugging Face <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="20" height="20" />
+## Dataset and Model available on Hugging Face
 
 📂 **Dataset**: Check out the **MediBeng** (20% subset) dataset used to fine-tune this model! This dataset includes synthetic code-switched clinical conversations in Bengali and English. It is designed to help train models for tasks like **speech recognition (ASR)**, **text-to-speech (TTS)**, and **machine translation**, focusing on bilingual code-switching in healthcare settings.
 
@@ -102,7 +116,7 @@ The model's performance improved as the training progressed, showing consistent 
 - **Eval Loss**: The evaluation loss decreases significantly, showing that the model is generalizing well to unseen data.
 - **Eval WER**: The Word Error Rate (WER) decreases over the epochs, indicating the model is getting better at transcribing code-switched Bengali-English speech.
 
-## The Fine-Tune Process is Below 🛠️
+## The Fine-Tune Process is Below
 
 ### Clone the Repository
 
@@ -179,32 +193,29 @@ python upload_model/upload_model.py
 ```
 The model testing script is available in the `tests` directory.
 
-
-
-
-### Limitations
+## Limitations
 - **Accents**: The model may struggle with very strong regional accents or non-native speakers of Bengali and English.
 - **Specialized Terms**: The model may not perform well with highly specialized medical terms or out-of-domain speech.
 - **Multilingual Support**: While the model is designed for Bengali and English, other languages are not supported.
 
-### Known Issue in Current Release
+## Known Issue in Current Release
 
 - Evaluation currently uses Word Error Rate (WER) during training.  
 - WER is not ideal for translation tasks.  
 - Future updates will include BLEU, METEOR, or chrF++ metrics for more accurate evaluation.
 
-### Ethical Considerations
+## Ethical Considerations
 - **Biases**: The training data may contain biases based on the demographics of the speakers, such as gender, age, and accent.
 - **Misuse**: Like any ASR system, this model could be misused to create fake transcripts of audio recordings, potentially leading to privacy and security concerns.
 - **Fairness**: Ensure the model is used in contexts where fairness and ethical considerations are taken into account, particularly in clinical environments.
-### Blog Post
+## Blog Post
 
 I’ve written a detailed blog post on Medium about **MediBeng Whisper-Tiny** and how it translates code-switched Bengali-English speech in healthcare. In this post, I discuss the dataset creation, model fine-tuning, and how this can improve healthcare transcription.
 
 Read the full article here: [MediBeng Whisper-Tiny: Translating Code-Switched Bengali-English Speech for Healthcare](https://medium.com/@promilaghoshmonty/medibeng-whisper-tiny-translating-code-switched-bengali-english-speech-for-healthcare-from-f7abb253b381)
 
 
-### License
+## License
 
 This model is based on the **Whisper-Tiny** model by [OpenAI](https://huggingface.co/openai/whisper-tiny) available on [Hugging Face](https://huggingface.co). The original model is licensed under the **Apache-2.0** license.
 
