@@ -1,10 +1,11 @@
 
-<p align="right">
+<p align="center">
   <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License" />
   <img src="https://img.shields.io/badge/Status-Fine%20Tuned-brightgreen" alt="Model Status" />
-  <img src="https://img.shields.io/badge/Base%20Model-OpenAI%20Whisper%20Tiny-blue" alt="Base Model" />
+  <img src="https://img.shields.io/badge/Base%20Model-OpenAI%20Whisper%20Tiny-00A9D2" alt="Base Model" />
   <a href="https://huggingface.co/pr0mila-gh0sh/MediBeng-Whisper-Tiny">
-    <img src="https://img.shields.io/badge/Hugging%20Face-Model-blue" alt="Hugging Face Model" />
+      <img src="https://img.shields.io/badge/🤗-MediBeng--Whisper--Tiny-yellow" alt="Hugging Face Model" />
+    </a>
   <a href="https://doi.org/10.1101/2025.04.25.25326406">
     <img src="https://img.shields.io/badge/medRxiv-10.1101%2F2025.04.25.25326406-0077cc" alt="medRxiv Preprint" />
   </a>
@@ -186,6 +187,12 @@ The model testing script is available in the `tests` directory.
 - **Specialized Terms**: The model may not perform well with highly specialized medical terms or out-of-domain speech.
 - **Multilingual Support**: While the model is designed for Bengali and English, other languages are not supported.
 
+### Known Issue in Current Release
+
+- Evaluation currently uses Word Error Rate (WER) during training.  
+- WER is not ideal for translation tasks.  
+- Future updates will include BLEU, METEOR, or chrF++ metrics for more accurate evaluation.
+
 ### Ethical Considerations
 - **Biases**: The training data may contain biases based on the demographics of the speakers, such as gender, age, and accent.
 - **Misuse**: Like any ASR system, this model could be misused to create fake transcripts of audio recordings, potentially leading to privacy and security concerns.
@@ -217,12 +224,16 @@ If you use **Medibeng Whisper-Tiny** or the **MediBeng** dataset for your resear
 
 #### For **MediBeng Whisper Tiny** Model (Fine-Tuned Model):
 
+The preprint is available on [medRxiv](https://www.medrxiv.org/content/10.1101/2025.04.25.25326406v1).
+
 ```bibtex
-@misc{pr0mila2025medibengwhisper,
-  author = {Promila Ghosh},
-  title = {MediBeng Whisper Tiny: Code-Switched Bengali-English Speech Translation for Clinical Settings},
-  year = {2025},
-  howpublished = {\url{https://huggingface.co/pr0mila-gh0sh/MediBeng-Whisper-Tiny}},
+@article{ghosh2025medibeng,
+  title={MediBeng Whisper Tiny: A fine-tuned code-switched Bengali-English translator for clinical applications},
+  author={Ghosh, Promila and Talukder, Sunipun},
+  journal={medRxiv},
+  year={2025},
+  doi={https://doi.org/10.1101/2025.04.25.25326406},
+  url={https://doi.org/10.1101/2025.04.25.25326406}
 }
 ```
 #### For MediBeng Dataset:
