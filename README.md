@@ -1,5 +1,5 @@
 
-<p align="center">
+<p align="right">
   <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License" />
   <img src="https://img.shields.io/badge/Status-Fine%20Tuned-brightgreen" alt="Model Status" />
   <img src="https://img.shields.io/badge/Base%20Model-OpenAI%20Whisper%20Tiny-00A9D2" alt="Base Model" />
