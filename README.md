@@ -244,7 +244,7 @@ The preprint is available on [medRxiv](https://www.medrxiv.org/content/10.1101/2
   journal={medRxiv},
   year={2025},
   doi={https://doi.org/10.1101/2025.04.25.25326406},
-  url={https://doi.org/10.1101/2025.04.25.25326406}
+  url={https://www.medrxiv.org/content/10.1101/2025.04.25.25326406v1}
 }
 ```
 #### For MediBeng Dataset:
