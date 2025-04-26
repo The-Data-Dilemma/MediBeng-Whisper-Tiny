@@ -5,7 +5,12 @@
   <img src="https://img.shields.io/badge/Base%20Model-OpenAI%20Whisper%20Tiny-blue" alt="Base Model" />
   <a href="https://huggingface.co/pr0mila-gh0sh/MediBeng-Whisper-Tiny">
     <img src="https://img.shields.io/badge/Hugging%20Face-Model-blue" alt="Hugging Face Model" />
+  <a href="https://doi.org/10.1101/2025.04.25.25326406">
+    <img src="https://img.shields.io/badge/medRxiv-10.1101%2F2025.04.25.25326406-0077cc" alt="medRxiv Preprint" />
   </a>
+	  <a href="https://paperswithcode.com/sota/speech-to-text-translation-on-medibeng?p=medibeng-whisper-tiny-a-fine-tuned-code">
+  <img src="https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/medibeng-whisper-tiny-a-fine-tuned-code/speech-to-text-translation-on-medibeng" alt="PWC" />
+</a>
 </p>
 
 
