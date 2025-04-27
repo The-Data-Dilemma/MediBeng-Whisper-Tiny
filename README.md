@@ -29,6 +29,7 @@
 - [Model Test Example Results](#model-test-example-results)
 - [Evaluation Results](#evaluation-results)
 - [The Fine-Tune Process is Belows](#the-fine-tune-process-is-below)
+- [Running the Model via Gradio and FastAPI Interfaces](#running-the-model-via-gradio-and-fastAPI-interfaces)
 - [Limitations](#limitations)
 - [Known Issue in Current Release](#known-issue-in-current-release)
 - [Ethical Considerations](#ethical-considerations)
@@ -218,7 +219,7 @@ The **Gradio Interface** allows you to quickly test the model using a web-based 
     [http://127.0.0.1:7860](http://127.0.0.1:7860)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/pr0mila/MediBeng-Whisper-Tiny/main/gradio_interface.png" width="400"/>
+  <img src="https://raw.githubusercontent.com/pr0mila/MediBeng-Whisper-Tiny/main/gradio_interface.png" width="800"/>
 </p>
 
 ### FastAPI API
@@ -235,9 +236,12 @@ If you prefer to interact with the model programmatically, you can use the **Fas
 2. Once the server is running, to use the `/transcribe` endpoint**, you can access the API documentation at:
   
 ## Limitations
+
 - **Accents**: The model may struggle with very strong regional accents or non-native speakers of Bengali and English.
 - **Specialized Terms**: The model may not perform well with highly specialized medical terms or out-of-domain speech.
 - **Multilingual Support**: While the model is designed for Bengali and English, other languages are not supported.
+- **Real-Time Processing**: The current solution interfaces (FastAPI and Gradio) are implemented for **batch processing**. **Real-time processing** is not currently supported, and the system may not provide immediate transcriptions or translations during live interactions.
+
 
 ## Known Issue in Current Release
 
