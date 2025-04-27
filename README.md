@@ -235,7 +235,7 @@ If you use **Medibeng Whisper-Tiny** or the **MediBeng** dataset for your resear
 
 #### For **MediBeng Whisper Tiny** Model (Fine-Tuned Model):
 
-The preprint is available on [medRxiv](https://www.medrxiv.org/content/10.1101/2025.04.25.25326406v1).
+The preprint is available on [medRxiv](https://www.medrxiv.org/content/10.1101/2025.04.25.25326406v2).
 
 ```bibtex
 @article{ghosh2025medibeng,
