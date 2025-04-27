@@ -233,7 +233,7 @@ If you prefer to interact with the model programmatically, you can use the **Fas
     ```bash
     uvicorn app.api:app --reload
     ```
-2. Once the server is running, to use the `/transcribe` endpoint**, you can access the API documentation at:
+2. Once the server is running, to use the `/transcribe` **endpoint**, you can access the API documentation at:
   
 ## Limitations
 
