@@ -1,17 +1,19 @@
 
 <p align="right">
+<a href="https://paperswithcode.com/sota/speech-to-text-translation-on-medibeng?p=medibeng-whisper-tiny-a-fine-tuned-code">
+  <img src="https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/medibeng-whisper-tiny-a-fine-tuned-code/speech-to-text-translation-on-medibeng" alt="PWC" />
+</a>
+ <a href="https://doi.org/10.1101/2025.04.25.25326406">
+    <img src="https://img.shields.io/badge/medRxiv-10.1101%2F2025.04.25.25326406-0077cc" alt="medRxiv Preprint" />
+  </a>
   <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License" />
   <img src="https://img.shields.io/badge/Status-Fine%20Tuned-brightgreen" alt="Model Status" />
   <img src="https://img.shields.io/badge/Base%20Model-OpenAI%20Whisper%20Tiny-00A9D2" alt="Base Model" />
   <a href="https://huggingface.co/pr0mila-gh0sh/MediBeng-Whisper-Tiny">
       <img src="https://img.shields.io/badge/🤗-MediBeng--Whisper--Tiny-yellow" alt="Hugging Face Model" />
     </a>
-  <a href="https://doi.org/10.1101/2025.04.25.25326406">
-    <img src="https://img.shields.io/badge/medRxiv-10.1101%2F2025.04.25.25326406-0077cc" alt="medRxiv Preprint" />
-  </a>
-	  <a href="https://paperswithcode.com/sota/speech-to-text-translation-on-medibeng?p=medibeng-whisper-tiny-a-fine-tuned-code">
-  <img src="https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/medibeng-whisper-tiny-a-fine-tuned-code/speech-to-text-translation-on-medibeng" alt="PWC" />
-</a>
+ 
+	  
 </p>
 
 
@@ -219,7 +221,7 @@ The **Gradio Interface** allows you to quickly test the model using a web-based 
     [http://127.0.0.1:7860](http://127.0.0.1:7860)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/pr0mila/MediBeng-Whisper-Tiny/main/gradio_interface.png" width="800"/>
+  <img src="https://raw.githubusercontent.com/pr0mila/MediBeng-Whisper-Tiny/main/gradio_interface.png" width="1000"/>
 </p>
 
 ### FastAPI API
