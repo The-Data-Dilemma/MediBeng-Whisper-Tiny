@@ -145,6 +145,8 @@ pip install -r requirements.txt
 Or, install the packages
 ```bash
 pip install torch transformers datasets librosa evaluate soundfile tensorboard jiwer accelerate
+pip install fastapi uvicorn transformers librosa pydantic 
+pip install gradio==3.0.22
 ```
 ### Configuration Setup
 
@@ -193,6 +195,45 @@ python upload_model/upload_model.py
 ```
 The model testing script is available in the `tests` directory.
 
+## Running the Model via Gradio and FastAPI Interfaces
+
+This repository provides two ways to interact with the fine-tuned **MediBeng Whisper Tiny** model:
+
+1. **Gradio Interface**: A user-friendly web interface to upload audio files and get transcriptions.
+2. **FastAPI API**: A programmatic way to interact with the model through a RESTful API endpoint.
+
+### Gradio Interface
+
+The **Gradio Interface** allows you to quickly test the model using a web-based user interface.
+
+#### Steps to Run Gradio Interface:
+
+1. **Navigate to the `app` directory** where the Gradio interface is located.
+2. **Run the Gradio interface**:
+
+    ```bash
+    python app/gradio_interface.py
+    ```
+3. Once the script runs, Gradio will provide a local link. **Access the Gradio interface** in your web browser by going to:
+    [http://127.0.0.1:7860](http://127.0.0.1:7860)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/pr0mila/MediBeng-Whisper-Tiny/main/gradio_interface.png" width="400"/>
+</p>
+
+### FastAPI API
+
+If you prefer to interact with the model programmatically, you can use the **FastAPI API** to send audio files and get transcriptions via a RESTful API.
+
+#### Steps to Run FastAPI API:
+
+1. **Run the FastAPI server** using the following command:
+
+    ```bash
+    uvicorn app.api:app --reload
+    ```
+2. Once the server is running, to use the `/transcribe` endpoint**, you can access the API documentation at:
+  
 ## Limitations
 - **Accents**: The model may struggle with very strong regional accents or non-native speakers of Bengali and English.
 - **Specialized Terms**: The model may not perform well with highly specialized medical terms or out-of-domain speech.
