@@ -18,7 +18,7 @@
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/pr0mila/MediBeng-Whisper-Tiny/main/medbeng.png" width="400"/>
+  <img src="https://github.com/pr0mila/MediBeng-Whisper-Tiny/blob/main/assets/medbeng.png" width="400"/>
 </p>
 
 
@@ -221,7 +221,7 @@ The **Gradio Interface** allows you to quickly test the model using a web-based 
     [http://127.0.0.1:7860](http://127.0.0.1:7860)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/pr0mila/MediBeng-Whisper-Tiny/main/gradio_interface.png" width="1000"/>
+  <img src="https://github.com/pr0mila/MediBeng-Whisper-Tiny/blob/main/assets/gradio_interface.png" width="1200"/>
 </p>
 
 ### FastAPI API
