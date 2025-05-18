@@ -31,7 +31,8 @@
 - [Model Test Example Results](#model-test-example-results)
 - [Evaluation Results](#evaluation-results)
 - [The Fine-Tune Process is Belows](#the-fine-tune-process-is-below)
-- [Running the Model via Gradio and FastAPI Interfaces](#running-the-model-via-gradio-and-fastAPI-interfaces)
+- [Running the Model via Gradio and FastAPI Interfaces](#running-the-model-via-gradio-and-fastapi-interfaces)
+- [Setup for Faster Whisper with Timestamps using `pr0mila-gh0sh/MediBeng-Whisper-Tiny`](#setup-for-faster-whisper-with-timestamps-using-pr0mila-gh0shmedibeng-whisper-tiny)
 - [Limitations](#limitations)
 - [Known Issue in Current Release](#known-issue-in-current-release)
 - [Ethical Considerations](#ethical-considerations)
@@ -235,7 +236,28 @@ If you prefer to interact with the model programmatically, you can use the **Fas
     ```bash
     uvicorn app.api:app --reload
     ```
-2. Once the server is running, to use the `/transcribe` **endpoint**, you can access the API documentation at:
+2. Once the server is running, to use the `/transcribe` **endpoint**, you can access the API documentation at: http://localhost:8000
+
+
+## Setup for Faster Whisper with Timestamps using `pr0mila-gh0sh/MediBeng-Whisper-Tiny`
+
+The **Faster Whisper API** optimizes speech-to-text models for faster, more efficient transcription with timestamps. To use Faster Whisper with the `pr0mila-gh0sh/MediBeng-Whisper-Tiny` model, follow these steps:
+For more detailed steps on using Faster Whisper, refer to the official [Faster Whisper GitHub repository](https://github.com/SYSTRAN/faster-whisper).
+
+1. **Install dependencies:**
+   ```bash
+   pip install transformers[torch]>=4.23
+   pip install ctranslate2
+   ```
+
+2. **Convert the `MediBeng-Whisper-Tiny` model to CTranslate2:**
+
+   ```bash
+   ct2-transformers-converter --model pr0mila-gh0sh/MediBeng-Whisper-Tiny --output_dir medi-beng-whisper-tiny-ct2 --copy_files tokenizer.json preprocessor_config.json --quantization float16
+   ```
+
+3. **Use the converted model:**
+   The CTranslate2 model will be automatically downloaded when loading the `pr0mila-gh0sh/MediBeng-Whisper-Tiny` model.
   
 ## Limitations
 
